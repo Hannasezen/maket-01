@@ -4,6 +4,12 @@
 	box-sizing: border-box;
 }
 
+button {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
 body {
 	font-family: 'Rubik', sans-serif;
 	background: #F8F9FC;
@@ -35,6 +41,10 @@ p {
 
 .capit {
 	text-transform: capitalize;
+}
+
+body {
+	background: #F8F9FC;
 }
 
 /*header*/
@@ -182,7 +192,7 @@ a:hover {
 	background: url(../img/icon3.svg) center center no-repeat rgba(31, 219, 132, 0.1);
 }
 
-.benefits h3 {
+.benefits h4 {
 	font-size: 18px;
 	font-weight: bold;
 	margin-bottom: 28px;
@@ -209,22 +219,52 @@ a:hover {
 
 /*pricing*/
 
-.pricing {
-	width: 78%;
-	max-width: 1130px;
+.pricing .container {
+	width: 1130px;
 	margin: 0 auto;
+	display: block;
 }
 
 .pricing h2 {
-	max-width: 810px;
+	width: 810px;
 	font-size: 40px;
 	line-height: 64px;
-	margin: 0 auto;
+	margin: 0 auto 50px;
 	text-align: center;
 	color: #32325C;
 }
 
+.tab {
+	margin: 0 auto;
+}
 
+.tab button {
+	padding: 20px 35px;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: #1FDB84;
+	float: left;
+}
+
+.pay-now {
+	background: #fff;
+	border: 1px solid #AEFDD9;
+	border-radius: 5px 0 0 5px;
+}
+
+.pay-later {
+	background: #F1FFF8;
+	border: 1px solid #AEFDD9;
+	border-radius: 0 5px 5px 0;
+}
+
+.pay-now-content {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: flex-start;
+}
 
 
 
