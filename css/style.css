@@ -43,7 +43,9 @@ p {
 	text-transform: capitalize;
 }
 
-body {
+.wrapper {
+	max-width: 1440px;
+	margin: 0 auto;
 	background: #F8F9FC;
 }
 
@@ -220,8 +222,8 @@ a:hover {
 /*pricing*/
 
 .pricing .container {
-	width: 1130px;
-	margin: 0 auto;
+	max-width: 1130px;
+	margin: 0 auto 250px;
 	display: block;
 }
 
@@ -235,7 +237,10 @@ a:hover {
 }
 
 .tab {
-	margin: 0 auto;
+	margin: 0 auto 65px;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
 }
 
 .tab button {
@@ -244,7 +249,7 @@ a:hover {
 	font-weight: bold;
 	letter-spacing: 2px;
 	color: #1FDB84;
-	float: left;
+	cursor: pointer;
 }
 
 .pay-now {
@@ -263,7 +268,105 @@ a:hover {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-around;
-	align-items: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.plan {
+	padding: 55px 60px;
+	text-align: center;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+}
+
+.plan h3 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 25px;
+	color: #32325C;
+}
+
+.plan p {
+	color: #5B6C94;
+}
+
+.price-content p {
+	font-size: 16px;
+	line-height: 28px;
+	color: #5B6C94;
+	margin-bottom: 15px;
+
+}
+
+.plan a {
+	display: inline-block;
+}
+
+.bestprice {
+	background: #fff;
+	border-top: 3px solid #0A8AFF;
+	box-shadow: 0 7px 24px rgba(83, 83, 83, 0.1);
+}
+
+.price {
+	max-width: 140px;
+	display: inline-block;
+}
+
+.price span {
+	font-size: 72px;
+	color: #1FDB84;
+}
+
+.price p {
+	margin-bottom: 60px;
+	margin-top: 15px;
+}
+
+/*testimanials*/
+
+.testimanials {
+
+}
+
+
+.what {
+	width: 470px;
+	padding-top: 78px;
+	padding-left: 170px;
+	font-size: 40px;
+	line-height: 48px;
+	font-weight: 500;
+	color: #031D5B;
+	position: relative;
+}
+
+.what::before {
+	content: '';
+	position: absolute;
+	top: 30px;
+	left: 145px;
+	width: 165px;
+	height: 413px;
+	background: linear-gradient(180deg, rgba(31, 219, 132, 0.1) -3.47%, rgba(31, 219, 132, 0.05) 100%);
+}
+
+.what::after {
+	content: '';
+	position: absolute;
+	top: 30px;
+	left: 360px;
+	width: 165px;
+	height: 413px;
+	background: linear-gradient(180deg, rgba(31, 219, 132, 0.1) -3.47%, rgba(31, 219, 132, 0.05) 100%);
+}
+
+.testimanials-slider {
+	width: 810px;
+	height: 970px;
+	background: #313A5A;
+	float: right;
 }
 
 
