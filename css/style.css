@@ -382,42 +382,79 @@ a:hover {
 	float: right;
 }
 
+/*slider*/
+
 .slider {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
-	align-items: stretch;
-	align-content: stretch;
 	margin-top: 260px;
 	margin-left: -200px;
 	margin-right: -900px;
+	margin-bottom: 100px;
 	position: relative;
 	z-index: 20;
 }
 
 .rewievs div {
 	float: left;
+	display: flex;
+	flex-flow: column;
+	align-content: stretch;
 	margin: 0 20px;
-	padding: 150px 60px 70px 50px;
+	padding: 80px 60px 70px 50px;
 	width: 420px;
 	background: #fff;
 	border-radius: 6px;
 }
 
-.rewievs p {
+.quotes {
+	margin-bottom: 30px;
+}
+
+.rewievs p,
+.rewievs h5 {
 	font-size: 18px;
 	line-height: 36px;
 	color: #5B6C94;
 }
 
+.rewievs p {
+	margin-bottom: 55px;
+}
+
+.rewievs h5 {
+	font-weight: 500;
+}
+
 .rewievs .active {
 	background: #1FDB84;
+}
+
+.rewievs .active p,
+.rewievs .active h5 {
 	color: #fff;
 }
 
+.points {
+	display: flex;
+	flex-flow: row;
+	padding-left: 93px;
+}
 
 
+.points a {
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	margin: 0 7px;
+}
 
+.points .active {
+	background: #fff;
+}
 
 /* сбросы стилей браузеров
 * {
