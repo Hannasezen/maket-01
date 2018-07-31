@@ -205,7 +205,7 @@ a:hover {
 	text-transform: capitalize;
 }
 
-.benefits h3:after {
+.benefits h4:after {
 	content: '';
 	width: 60px;
 	height: 4px;
@@ -302,6 +302,7 @@ a:hover {
 
 .plan a {
 	display: inline-block;
+	box-shadow: 0px 8px 34px rgba(31, 219, 132, 0.6);
 }
 
 .bestprice {
@@ -390,7 +391,7 @@ a:hover {
 	justify-content: space-between;
 	margin-top: 260px;
 	margin-left: -200px;
-	margin-right: -900px;
+	margin-right: -1500px;
 	margin-bottom: 100px;
 	position: relative;
 	z-index: 20;
@@ -398,14 +399,19 @@ a:hover {
 
 .rewievs div {
 	float: left;
-	display: flex;
-	flex-flow: column;
-	align-content: stretch;
+	height: 530px;
 	margin: 0 20px;
 	padding: 80px 60px 70px 50px;
 	width: 420px;
-	background: #fff;
+	background: rgba(255, 255, 255, 0.95);
+	box-shadow: 12px 12px 40px rgba(121, 121, 121, 0.3);
 	border-radius: 6px;
+}
+
+.rewiev3 {
+	display: flex;
+	flex-flow: column;
+	align-content: stretch;
 }
 
 .quotes {
@@ -429,6 +435,8 @@ a:hover {
 
 .rewievs .active {
 	background: #1FDB84;
+	box-shadow: 12px 12px 40px rgba(31, 219, 132, 0.5), 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 6px;
 }
 
 .rewievs .active p,
@@ -455,6 +463,67 @@ a:hover {
 .points .active {
 	background: #fff;
 }
+
+/*partners*/
+
+.clients .container {
+	display: block;
+	text-align: center;
+	padding-top: 200px;
+	padding-bottom: 180px;
+}
+
+.clients p {
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #031D5B;
+	margin-bottom: 50px;
+}
+
+.clients-logos {
+	margin: 0 auto;
+	max-width: 1057px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.clients-logos a:hover {
+	border: none;
+	background: red;
+}
+
+/*footer*/
+
+.footer {
+	padding-bottom: 120px;
+}
+
+.footer,
+.pages a {
+	font-size: 16px;
+	text-align: center;
+	color: #5B6C94;
+}
+
+.footer .rights {
+	margin-bottom: 60px;
+}
+
+.pages a {
+	margin: 0 20px;
+}
+
+.pages a:hover {
+	color: red;
+}
+
+
+
+
+
 
 /* сбросы стилей браузеров
 * {
