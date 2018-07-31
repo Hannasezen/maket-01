@@ -67,10 +67,10 @@
 				<h2>Paid plan starets with a 7-day free trial, No credit card required</h2>
 				<div class="paytime">
 					<div class="tab clearfix">
-						<button class="pay-now upper" id="pay-now">MONTHLY</button>
-						<button class="pay-later upper" id="pay-later">YEARLY - 2 MONTH FREE</button>
+						<button class="pay-now upper tablinks" onclick="openPainment(event, 'pay-now')" id="defaultOpen">MONTHLY</button>
+						<button class="pay-later upper tablinks" onclick="openPainment(event, 'pay-later')">YEARLY - 2 MONTH FREE</button>
 					</div>
-					<div class="pay-now-content" id="div1">
+					<div class="pay-now-content tabcontent" id="pay-now">
 						<div class="plan starter">
 							<div class="price-content">
 								<h3 class="capit">starter</h3>
@@ -119,7 +119,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="pay-later-content" id="div2">
+					<div class="pay-later-content tabcontent" id="pay-later">
 						<div class="">
 							<div class="">
 								<h3 class="">starter</h3>
@@ -269,6 +269,24 @@
 				<a href="#">Clients</a>
 			</div>
 		</footer>
-	</div>	
+	</div>
+	<script>
+		function openPainment(evt, Painment) {
+		    var i, tabcontent, tablinks;
+		    tabcontent = document.getElementsByClassName("tabcontent");
+		    for (i = 0; i < tabcontent.length; i++) {
+		        tabcontent[i].style.display = "none";
+		    }
+		    tablinks = document.getElementsByClassName("tablinks");
+		    for (i = 0; i < tablinks.length; i++) {
+		        tablinks[i].className = tablinks[i].className.replace(" active", "");
+		    }
+		    document.getElementById(Painment).style.display = "flex";
+		    evt.currentTarget.className += " active";
+}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+	</script>
 </body>
 </html>
