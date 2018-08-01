@@ -222,7 +222,7 @@ a:hover {
 
 /*pricing*/
 
-.pricing .container {
+.pricing>.container {
 	max-width: 1130px;
 	margin: 0 auto 250px;
 	display: block;
@@ -326,13 +326,13 @@ a:hover {
 	margin-top: 15px;
 }
 
-/*testimanials*/
+/*testimonials*/
 
-.testimanials {
+.testimonials {
 
 }
 
-.testimanials-title {
+.testimonials-title {
 	float: left;
 }
 
@@ -376,7 +376,7 @@ a:hover {
 	background: rgba(31, 219, 129, 0.1);
 }
 
-.testimanials-back {
+.testimonials-back {
 	width: 810px;
 	height: 970px;
 	background: #313A5A;
